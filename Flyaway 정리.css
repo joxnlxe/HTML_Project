@@ -1,0 +1,23 @@
+body{
+  background-color: #F5FAFD;
+}
+.logo{
+  position: absolute;
+  width: 150px;
+  height: 49px;
+  top: 51px;
+  left: 168px;
+  object-fit: cover;
+} 
+.button{
+  position: relative;
+  top: 50px;
+  right: 20px;
+  background-color: #D8E9F6;
+  border-radius: 7px;
+  border: #091C2A solid 0.5px; 
+  padding: 5px;
+  width: 70px;
+  float: right;
+  margin: 10px;
+}
