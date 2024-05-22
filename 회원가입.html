@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Flyaway 회원가입</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5fafd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .register-box {
+            position: relative;
+            width: 300px;
+            padding: 40px;
+            background: #d8e9f6;
+            text-align: center;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .register-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #091C2a;
+        }
+
+        .register-box .user-box {
+            position: relative;
+        }
+
+        .register-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #091C2a;
+            margin-bottom: 30px;
+            border: none;
+            border-bottom: 1px solid #0F2C42;
+            outline: none;
+            background: transparent;
+        }
+
+        .register-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #091C2a;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+
+        .register-box .user-box input:focus ~ label,
+        .register-box .user-box input:valid ~ label {
+            top: -20px;
+            left: 0;
+            color: #0F2C42;
+            font-size: 12px;
+        }
+
+        .register-box .user-box.error input {
+            border-bottom-color: red;
+        }
+
+        .register-box .action-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #0F2C42;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 20px;
+            letter-spacing: 4px;
+            border: 2px solid #0F2C42;
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .register-box .action-btn:hover {
+            background: #0F2C42;
+            color: #fff;
+        }
+
+        .logo {
+            position: absolute;
+            top: 125px;
+            left: 100px;
+            width: 250px; 
+        }
+
+        .error-msg {
+            color: red;
+            font-size: 12px;
+            text-align: left;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <img src="./FLYAWAY.png" class="logo" alt="Flyaway Logo">
+    <div class="register-box">
+        <h2>회원가입</h2>
+        <form id="register-form">
+            <div class="user-box">
+                <input type="text" name="name" required>
+                <label>이름:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="birthdate" max="2005-12-31" required>
+                <label>생년월일:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="username" required>
+                <label>ID:</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required>
+                <label>비밀번호:</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="confirm_password" required oninput="checkPassword()">
+                <label>비밀번호 확인:</label>
+                <span class="error-msg" id="password-error-msg"></span>
+            </div>
+            <div class="user-box">
+                <input type="email" name="email" required>
+                <label>이메일:</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="country" required>
+                <label>거주국가:</label>
+            </div>
+            <button type="submit" class="action-btn">가입하기</button>
+        </form>
+    </div>
+
+    <script>
+        function checkPassword() {
+            var password = document.getElementsByName('password')[0].value;
+            var confirmPassword = document.getElementsByName('confirm_password')[0].value;
+            var passwordError = document.getElementById('password-error-msg');
+
+            if (password !== confirmPassword) {
+                passwordError.textContent = "비밀번호가 일치하지 않습니다.";
+            } else {
+                passwordError.textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>
