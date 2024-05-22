@@ -141,7 +141,15 @@
                 <input type="text" name="country" required>
                 <label>거주국가:</label>
             </div>
-            <button type="submit" class="action-btn">가입하기</button>
+            <div class="user-box">
+                <select id="language" onchange="changeLanguage()">
+                    <option value="ko">한국어</option>
+                    <option value="en">English</option>
+                    <option value="ja">日本語</option>
+                    <option value="zh">中文</option>
+                </select>
+            </div>
+            <button type="submit" class="action-btn" value="gogo" onclick="location.href='회원가입축하.html'">가입하기</button>
         </form>
     </div>
 
@@ -155,6 +163,53 @@
                 passwordError.textContent = "비밀번호가 일치하지 않습니다.";
             } else {
                 passwordError.textContent = "";
+            }
+        }
+
+        function changeLanguage() {
+            var language = document.getElementById('language').value;
+
+            if (language === 'en') {
+                document.querySelector('h2').textContent = 'Sign Up';
+                document.querySelectorAll('.user-box label')[0].textContent = 'Name:';
+                document.querySelectorAll('.user-box label')[1].textContent = 'Birthdate:';
+                document.querySelectorAll('.user-box label')[2].textContent = 'Username:';
+                document.querySelectorAll('.user-box label')[3].textContent = 'Password:';
+                document.querySelectorAll('.user-box label')[4].textContent = 'Confirm Password:';
+                document.querySelectorAll('.user-box label')[5].textContent = 'Email:';
+                document.querySelectorAll('.user-box label')[6].textContent = 'Country:';
+                document.querySelector('.action-btn').textContent = 'Sign Up';
+            } else if (language === 'ja') {
+                document.querySelector('h2').textContent = '会員登録';
+                document.querySelectorAll('.user-box label')[0].textContent = '名前：';
+                document.querySelectorAll('.user-box label')[1].textContent = '生年月日：';
+                document.querySelectorAll('.user-box label')[2].textContent = 'ユーザー名：';
+                document.querySelectorAll('.user-box label')[3].textContent = 'パスワード：';
+                document.querySelectorAll('.user-box label')[4].textContent = 'パスワード確認：';
+                document.querySelectorAll('.user-box label')[5].textContent = 'メールアドレス：';
+                document.querySelectorAll('.user-box label')[6].textContent = '居住国：';
+                document.querySelector('.action-btn').textContent = '登録する';
+            } else if (language === 'zh') {
+                document.querySelector('h2').textContent = '注册';
+                document.querySelectorAll('.user-box label')[0].textContent = '姓名：';
+                document.querySelectorAll('.user-box label')[1].textContent = '出生日期：';
+                document.querySelectorAll('.user-box label')[2].textContent = '用户名：';
+                document.querySelectorAll('.user-box label')[3].textContent = '密码：';
+                document.querySelectorAll('.user-box label')[4].textContent = '确认密码：';
+                document.querySelectorAll('.user-box label')[5].textContent = '电子邮件：';
+                document.querySelectorAll('.user-box label')[6].textContent = '所在国家：';
+                document.querySelector('.action-btn').textContent = '注册';
+            } else {
+                // Default to Korean
+                document.querySelector('h2').textContent = '회원가입';
+                document.querySelectorAll('.user-box label')[0].textContent = '이름:';
+                document.querySelectorAll('.user-box label')[1].textContent = '생년월일:';
+                document.querySelectorAll('.user-box label')[2].textContent = '아이디:';
+                document.querySelectorAll('.user-box label')[3].textContent = '비밀번호:';
+                document.querySelectorAll('.user-box label')[4].textContent = '비밀번호 확인:';
+                document.querySelectorAll('.user-box label')[5].textContent = '이메일:';
+                document.querySelectorAll('.user-box label')[6].textContent = '거주국가:';
+                document.querySelector('.action-btn').textContent = '가입하기';
             }
         }
     </script>
