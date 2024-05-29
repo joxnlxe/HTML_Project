@@ -77,5 +77,33 @@
         </label>
       </div>
     </div>
+    <script>
+      var canvas1 = document.getElementById("hotelCanvas1");
+      var context1 = canvas1.getContext("2d");
+
+      var img1 = new Image();
+      img1.onload = function() {
+          context1.drawImage(img1,0,0,canvas1.width,canvas1.height);
+      }
+      img1.src = "김포/롯데시티호텔.jpg";
+
+      var canvas2 = document.getElementById("hotelCanvas2");
+      var context2 = canvas2.getContext("2d");
+
+      var img2 = new Image();
+      img2.onload = function() {
+          context2.drawImage(img2,0,0,canvas2.width,canvas2.height);
+      }
+      img2.src = "김해/롯데 호텔 부산.jpg";
+
+      var canvas3 = document.getElementById("hotelCanvas3");
+      var context3 = canvas3.getContext("2d");
+
+      var img3 = new Image();
+      img3.onload = function() {
+          context3.drawImage(img3,0,0,canvas3.width,canvas3.height);
+      }
+      img3.src = "인천/더 위크앤 리조트.jpg";
+  </script>
   </body>
 </html>
