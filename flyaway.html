@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyaway Airlines</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Header styles */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #C1DDF1;
+      color: #fff;
+    }
+
+    .logo a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .auth a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    /* Hero section styles */
+    .hero {
+      position: relative;
+      height: 500px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .search-box {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .search-box form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .form-group {
+      margin: 10px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group select,
+    .form-group input {
+      padding: 5px;
+      border-radius: 5px;
+      border: none;
+      margin-top: 5px;
+    }
+
+    .form-group select {
+      width: 150px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-nav ul {
+      list-style-type: none;
+      display: flex;
+    }
+
+    .footer-nav ul li {
+      margin-right: 20px;
+    }
+
+    .footer-nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .social-media a {
+      margin-left: 10px;
+    }
+
+    .social-media img {
+      width: 30px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html">Flyaway Airlines</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">항공</a></li>
+        <li><a href="#">호텔</a></li>
+        <li><a href="#">교통</a></li>
+        <li><a href="#">맛집</a></li>
+        <li><a href="#">여행지</a></li>
+      </ul>
+    </nav>
+    <div class="auth">
+        <button type="button" class="action-btn" value="고고룽" onclick="location.href='회원가입.html'">회원가입</button>
+        <button type="button" class="action-btn" value="고고씽" onclick="location.href='login_page.html'">로그인</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop>
+      <source src="flyaway.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="overlay"></div>
+    <div class="search-box">
+      <form action="#">
+        <div class="form-group">
+          <label for="departure">출발지</label>
+          <select id="departure">
+            <option value="Seoul">서울</option>
+            <option value="Incheon">인천</option>
+            <option value="Busan">부산</option>
+            <option value="Jeju">제주</option>
+            <option value="Yeosu">여수</option>
+
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="destination">도착지</label>
+          <select id="destination">
+            <option value="Incheon">인천</option>
+            <option value="Seoul">서울</option>
+            <option value="Busan">부산</option>
+            <option value="Jeju">제주</option>
+            <option value="Yeosu">여수</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="departure-date">가는 날</label>
+          <input type="date" id="departure-date">
+        </div>
+        <div class="form-group">
+          <label for="return-date">오는 날</label>
+          <input type="date" id="return-date">
+        </div>
+        <div class="form-group">
+          <label for="trip-type">여행 유형</label>
+          <select id="trip-type">
+            <option value="round-trip">왕복</option>
+            <option value="one-way">편도</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="passengers">탑승자</label>
+          <select id="passengers">
+            <option value="adult">성인</option>
+            <option value="child">어린이</option>
+            <option value="infant">유아</option>
+          </select>
+        </div>
+        <button type="submit">항공권 검색</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-nav">
+      <ul>
+        <li><a href="#">이용약관</a></li>
+        <li><a href="#">개인정보 처리방침</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+    </div>
+    <div class="social-media">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>
