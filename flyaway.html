@@ -5,247 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flyaway Airlines</title>
   <style>
-    /* Reset styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    /* Header styles */
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #C1DDF1;
-      color: #fff;
-    }
-
-    .logo a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 24px;
-    }
-
-    nav ul {
-      list-style-type: none;
-      display: flex;
-    }
-
-    nav ul li {
-      margin-right: 20px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .auth a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-    }
-
-    /* Hero section styles */
-    .hero {
-      position: relative;
-      height: 500px;
-    }
-
-    video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .search-box {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: #fff;
-    }
-
-    .search-box form {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .form-group {
-      margin: 10px;
-    }
-
-    .form-group label {
-      display: block;
-      margin-bottom: 5px;
-    }
-
-    .form-group select,
-    .form-group input {
-      padding: 5px;
-      border-radius: 5px;
-      border: none;
-      margin-top: 5px;
-    }
-
-    .form-group select {
-      width: 150px;
-    }
-
-    button {
-      padding: 10px 20px;
-      background-color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      color: #333;
-      margin-top: 10px;
-    }
-
-    /* Footer styles */
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .footer-nav ul {
-      list-style-type: none;
-      display: flex;
-    }
-
-    .footer-nav ul li {
-      margin-right: 20px;
-    }
-
-    .footer-nav ul li a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .social-media a {
-      margin-left: 10px;
-    }
-
-    .social-media img {
-      width: 30px;
-      height: auto;
-    }
+    @import url(flyaway.css);
   </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html">Flyaway Airlines</a>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">항공</a></li>
-        <li><a href="#">호텔</a></li>
-        <li><a href="#">교통</a></li>
-        <li><a href="#">맛집</a></li>
-        <li><a href="#">여행지</a></li>
-      </ul>
-    </nav>
-    <div class="auth">
-        <button type="button" class="action-btn" value="고고룽" onclick="location.href='회원가입.html'">회원가입</button>
-        <button type="button" class="action-btn" value="고고씽" onclick="location.href='login_page.html'">로그인</button>
-    </div>
-  </header>
+  <div class="contaniner">
+    <div class="main">
+      <header> <!--로고, 메뉴, 로그인 및 회원가입-->
+        <div class="logo">
+          <a href="flyaway.html"><img src="FLYAWAY.png" class="pic"></a>
+        </div>
+        <nav class="main">
+          <ul>
+            <li><a href="#" target="_blank">항공</a></li>
+            <li><a href="#" target="_blank">호텔</a></li>
+            <li><a href="맛집.html" target="_blank">맛집</a></li>
+            <li><a href="#" target="_blank">여행지</a></li>
+          </ul>
+        </nav>
+        <div class="auth">
+            <a href="회원가입.html"><button type="button" class="action-btn" value="고고룽">회원가입</button></a>
+            <a href="login_page.html"><button type="button" class="action-btn" value="고고씽">로그인</button></a>
+        </div>
+      </header>
 
-  <section class="hero">
-    <video autoplay muted loop>
-      <source src="flyaway.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="overlay"></div>
-    <div class="search-box">
-      <form action="#">
-        <div class="form-group">
-          <label for="departure">출발지</label>
-          <select id="departure">
-            <option value="Seoul">서울</option>
-            <option value="Incheon">인천</option>
-            <option value="Busan">부산</option>
-            <option value="Jeju">제주</option>
-            <option value="Yeosu">여수</option>
+      <section class="hero"> <!--비디오-->
+        <video autoplay muted loop>
+          <source src="flyaway1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <!-- <div class="overlay"></div> -->
+        <div class="search-box"> <!--검색창-->
+          <iframe src="flyaway iframe.html" class="iframe"></iframe>
+        </div>
+      </section>
 
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="destination">도착지</label>
-          <select id="destination">
-            <option value="Incheon">인천</option>
-            <option value="Seoul">서울</option>
-            <option value="Busan">부산</option>
-            <option value="Jeju">제주</option>
-            <option value="Yeosu">여수</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="departure-date">가는 날</label>
-          <input type="date" id="departure-date">
-        </div>
-        <div class="form-group">
-          <label for="return-date">오는 날</label>
-          <input type="date" id="return-date">
-        </div>
-        <div class="form-group">
-          <label for="trip-type">여행 유형</label>
-          <select id="trip-type">
-            <option value="round-trip">왕복</option>
-            <option value="one-way">편도</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="passengers">탑승자</label>
-          <select id="passengers">
-            <option value="adult">성인</option>
-            <option value="child">어린이</option>
-            <option value="infant">유아</option>
-          </select>
-        </div>
-        <button type="submit">항공권 검색</button>
-      </form>
-    </div>
-  </section>
+      <div class="recommendations">
+          <table>
+              <caption class="up">추천 호텔</caption>
+              <caption class="more"><a href="#">더보기-></a></caption>
+              <tr>
+                  <td class="recommend">
+                      <figure>
+                          <canvas id="hotelCanvas1" width="250" height="200"></canvas>
+                          <figcaption>김포 - 롯데시티호텔</figcaption>
+                      </figure>
+                  </td>
+                  <td class="recommend">
+                      <figure>
+                          <canvas id="hotelCanvas2" width="250" height="200"></canvas>
+                          <figcaption>김해 - 롯데호텔 부산</figcaption>
+                      </figure>
+                  </td>
+                  <td class="recommend"> 
+                      <figure>
+                          <canvas id="hotelCanvas3" width="250" height="200"></canvas>
+                          <figcaption>인천 - 더 위크앤 리조트</figcaption>
+                      </figure>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      
+        <!-- <section class="recommendations">
+            <h2>추천 맛집</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                        <canvas id="restaurantCanvas1" width="200" height="200"></canvas>
+                    </td>
+                    <td>
+                        <img src="" alt="">
+                        <canvas id="restaurantCanvas2" width="200" height="200"></canvas>
+                    </td>
+                    <td>
+                    <img src="" alt="">
+                    <canvas id="restaurantCanvas3" width="200" height="200"></canvas>
+                </td>
+            </tr>
+        </table>
+        <a href="">더보기</a>
+        </section>
 
-  <footer>
-    <div class="footer-nav">
-      <ul>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보 처리방침</a></li>
-        <li><a href="#">고객센터</a></li>
-      </ul>
+        <section class="recommendations">
+            <h2>추천 여행지</h2>
+            <table>
+                <tr>
+                    <td>
+                        <img src="" alt="">
+                        <canvas id="destinationCanvas1" width="200" height="200"></canvas>
+                    </td>
+                    <td>
+                        <img src="" alt="">
+                        <canvas id="destinationCanvas2" width="200" height="200"></canvas>
+                    </td>
+                    <td>
+                        <img src="" alt="">
+                        <canvas id="destinationCanvas3" width="200" height="200"></canvas>
+                    </td>
+                </tr>
+            </table>
+            <a href="">더보기</a>
+        </section> -->
+        <script>
+            var canvas1 = document.getElementById("hotelCanvas1");
+            var context1 = canvas1.getContext("2d");
+
+            var img1 = new Image();
+            img1.onload = function() {
+                context1.drawImage(img1,0,0,canvas1.width,canvas1.height);
+            }
+            img1.src = "사진/김포/롯데시티호텔.jpg";
+
+            var canvas2 = document.getElementById("hotelCanvas2");
+            var context2 = canvas2.getContext("2d");
+
+            var img2 = new Image();
+            img2.onload = function() {
+                context2.drawImage(img2,0,0,canvas2.width,canvas2.height);
+            }
+            img2.src = "사진/김해/롯데 호텔 부산.jpg";
+
+            var canvas3 = document.getElementById("hotelCanvas3");
+            var context3 = canvas3.getContext("2d");
+
+            var img3 = new Image();
+            img3.onload = function() {
+                context3.drawImage(img3,0,0,canvas3.width,canvas3.height);
+            }
+            img3.src = "사진/인천/더 위크앤 리조트.jpg";
+        </script>
+      </div>
     </div>
-    <div class="social-media">
-      <a href="#"><img src="facebook.png" alt="Facebook"></a>
-      <a href="#"><img src="twitter.png" alt="Twitter"></a>
-      <a href="#"><img src="instagram.png" alt="Instagram"></a>
-    </div>
-  </footer>
+
+      <footer> <!--footer-->
+        <div class="footer-nav">
+          <ul>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">개인정보 처리방침</a></li>
+            <li><a href="#">고객센터</a></li>
+          </ul>
+        </div>
+        <!-- <div class="social-media">
+          <a href="#"><img src="facebook.png" alt="Facebook"></a>
+          <a href="#"><img src="twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        </div> -->
+      </footer>
+  
 </body>
 </html>

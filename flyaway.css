@@ -1,0 +1,204 @@
+/* flyaway css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #F8FDFF;
+    position: relative;
+}
+
+div.container{
+    height: auto;
+    min-height: 100%;
+    padding-bottom: 1000px;
+}
+
+div.main{
+    min-height: 1500px;
+}
+
+/* Header styles (로고, 메뉴, 로그인)*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #C1DDF1;
+    color: #fff;
+}
+/*로고*/
+.logo a {
+    position: relative;
+    right: 30px;
+    float: left;
+    left: 80%;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+/*로고 사진*/
+.pic{
+    width: 130px;
+}
+/*메뉴*/
+nav.main ul { 
+    list-style-type: none;
+    display: flex;
+}
+
+nav.main ul li {
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+nav.main ul li:hover {
+    text-decoration: underline;
+}
+
+nav.main ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/*로그인, 회원가입 창*/
+.auth a {
+    position: relative;
+    right: 70px;
+    float: right;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #095E82;
+    color: #fff;
+}
+
+
+
+/* 비디오 */
+.hero {
+    position: relative;
+    height: 500px;
+}
+
+video {
+    clear: both;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    text-align: center;
+    z-index: 9999;
+}
+
+/*iframe*/
+.search-box {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.iframe{
+    width: 750px;
+    height: 378px;
+    border-radius: 15px;
+    border: 0.5px solid #ccc;
+}
+
+div.recommendations{
+    position: relative;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+td.recommend{
+    padding-right: 40px;
+    padding-top: 20px;
+}
+
+td>figure{
+    font-size: small;
+    font-weight: 550;
+    text-align: center;
+}
+
+caption.more{
+    font-size: small;
+    caption-side:bottom;
+}
+
+caption.more{
+    text-align: right;
+    margin-right: 40px;
+}
+
+caption.up{
+    border-left-color: #095E82 ;
+    border-left-style: solid ;
+    border-left-width: 5px;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+caption>a{
+    text-decoration: none;
+    color: rgb(112, 125, 138);
+}
+
+  /* Footer styles */
+footer {
+    height: 60px;
+    position: relative;
+    transform: translateY(0%);
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.footer-nav ul li {
+    margin-right: 20px;
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* .social-media a {
+    margin-left: 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+} */
+
