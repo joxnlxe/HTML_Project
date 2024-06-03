@@ -18,7 +18,7 @@ div.container{
 }
 
 div.main{
-    min-height: 1500px;
+    min-height: 2000px;
 }
 
 div.ad{
@@ -192,7 +192,7 @@ caption>a{
 
   /* Footer styles */
 footer {
-    height: 60px;
+    height: 100px;
     position: relative;
     transform: translateY(0%);
     bottom: 0;
