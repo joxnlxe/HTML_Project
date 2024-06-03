@@ -21,6 +21,32 @@ div.main{
     min-height: 1500px;
 }
 
+div.ad{
+    position: fixed;
+    top: 300px;
+    right: 10px;
+    float: right;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    border: #333 3px solid;
+    z-index: 9999;
+}
+p.ad{
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+
+}
+span.ad{
+    color: red;
+    font-size: 20px;
+}
+div.ad_a{
+    text-align: center;
+}
+
+
 /* Header styles (로고, 메뉴, 로그인)*/
 header {
     display: flex;
@@ -116,7 +142,7 @@ video {
 
 .iframe{
     width: 750px;
-    height: 378px;
+    height: 379px;
     border-radius: 15px;
     border: 0.5px solid #ccc;
 }
