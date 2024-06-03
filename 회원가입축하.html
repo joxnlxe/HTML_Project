@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Flyaway 회원가입 축하합니다!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5fafd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Arial', sans-serif;
+        }
+        .logo{
+            position: absolute;
+            top: 125px;
+            left: 100px;
+            width: 250px; 
+        }
+        .congrats-box {
+            text-align: center;
+            padding: 40px;
+            background: #d8e9f6;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .congrats-box h2 {
+            color: #091C2a;
+            margin-bottom: 30px;
+        }
+
+        .congrats-box p {
+            color: #091C2a;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .congrats-box .action-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #0F2C42;
+            font-size: 16px;
+            text-transform: uppercase;
+            text-decoration: none;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 20px;
+            letter-spacing: 4px;
+            border: 2px solid #0F2C42;
+            border-radius: 5px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .congrats-box .action-btn:hover {
+            background: #0F2C42;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <img src="./FLYAWAY.png" class="logo" alt="Flyaway Logo">
+    <div class="congrats-box">
+        <h2>회원가입을 축하합니다!</h2>
+        <p>회원가입이 성공적으로 완료되었습니다.</p>
+        <p>FLYAWAY 서비스를 즐기세요!</p>
+        <a href="flyaway.html" class="action-btn">홈으로 돌아가기</a>
+    </div>
+</body>
+</html>

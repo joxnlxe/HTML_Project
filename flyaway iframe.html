@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>항공권 검색</title>
+    <style>
+        @import url("flyaway\ iframe.css");
+
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <h1>항공권 검색</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="from">출발지</label>
+                    <select>
+                        <option>김포</option>
+                        <option>김해</option>
+                        <option>여수</option>
+                        <option>인천</option>
+                        <option>제주</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="to">도착지</label>
+                    <select>
+                        <option>인천</option>
+                        <option>김포</option>
+                        <option>김해</option>
+                        <option>여수</option>
+                        <option>제주</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group1">
+                    <label for="departure-date">출발일</label>
+                    <input type="datetime-local" departure-date" name="departure-date" class="date">
+                </div>
+                <div class="form-group1">
+                    <label for="return-date">복귀일</label>
+                    <input type="datetime-local" id="return-date" name="return-date" class="date">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group2">
+                    <label for="class">클래스</label>
+                    <select id="class" name="class">
+                        <option value="economy">이코노미</option>
+                        <option value="business">비즈니스</option>
+                        <option value="first">퍼스트 클래스</option>
+                    </select>
+                </div>
+                <div class="form-group3">
+                    <label for="adults">성인</label>
+                    <input type="number" id="adults" name="adults" min="1" max="10" value="1">
+                </div>
+                <div class="form-group3">
+                    <label for="children">청소년</label>
+                    <input type="number" id="children" name="children" min="0" max="10" value="0">
+                </div>
+                <div class="form-group3">
+                    <label for="infants">유아</label>
+                    <input type="number" id="infants" name="infants" min="0" max="10" value="0">
+                </div>
+            </div>
+            <button type="submit" class="search-btn">검색</button>
+        </form>
+    </div>
+</body>
+</html>
