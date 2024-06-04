@@ -24,7 +24,12 @@ body {
     justify-content: space-between;
     margin-bottom: 15px;
 }
-.form-group , .form-group1, .form-group2, .form-group3 {
+.from-row2{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.form-group , .form-group1, .form-group2, .form-group3{ 
     width: 100px;
     flex-grow: 1;
     margin-right: 10px;
@@ -39,9 +44,20 @@ body {
     color: #666;
     font-size: 14px;
 }
-.form-group input, .form-group select, .form-group2 select {
+.form-group input, .form-group select, .form-group2 select{
     width: 98%;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.form-group3 label.direct{
+    /* all: unset; */
+    position: relative;
+    top: 20px;
+    right: 15px;
+    width: 95%;
+    padding: 9px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 14px;

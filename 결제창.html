@@ -45,7 +45,7 @@
       border: 1px solid #ccc;
       border-radius: 4px;
     }
-    .payment-form input{
+    .payment-form input.in{
       width: 95%;
       padding: 8px;
       margin-bottom: 10px;
@@ -74,22 +74,25 @@
     <h2>결제화면</h2>
     <form>
       <label for="cardType">카드 종류</label>
-      <select id="cardType" name="cardType">
+      <input type="radio" name="card" class="card">Visa
+      &nbsp;&nbsp;
+      <input type="radio" name="card" class="card">MasterCard
+      <!-- <select id="cardType" name="cardType">
         <option value="visa">Visa</option>
         <option value="mastercard">MasterCard</option>
-      </select>
+      </select> -->
 
       <label for="cardNumber">카드 번호</label>
-      <input type="text" id="cardNumber" name="cardNumber" placeholder="0000-0000-0000-0000" required>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="0000-0000-0000-0000" required class="in">
 
       <label for="expiryDate">유효기간</label>
-      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required class="in">
 
       <label for="cvc">CVC</label>
-      <input type="text" id="cvc" name="cvc" required>
+      <input type="text" id="cvc" name="cvc" required class="in">
 
       <label for="cardHolder">카드 명의</label>
-      <input type="text" id="cardHolder" name="cardHolder" required>
+      <input type="text" id="cardHolder" name="cardHolder" required class="in">
 
       <label for="paymentOption">결제 방식</label>
       <select id="paymentOption" name="paymentOption">
