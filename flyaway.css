@@ -18,7 +18,7 @@ div.container{
 }
 
 div.main{
-    min-height: 2000px;
+    min-height: 1800px;
 }
 
 div.ad{
@@ -29,7 +29,7 @@ div.ad{
     width: 250px;
     height: 300px;
     background-color: white;
-    border: #333 3px solid;
+    border: #333 3px outset;
     z-index: 9999;
 }
 p.ad{
@@ -150,6 +150,7 @@ video {
 div.recommendations{
     position: relative;
     top: 150px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
@@ -157,6 +158,10 @@ div.recommendations{
 td.recommend{
     padding-right: 40px;
     padding-top: 20px;
+}
+
+td.recommend:hover{
+    transform: scale(1.1);
 }
 
 td>figure{
@@ -168,6 +173,11 @@ td>figure{
 caption.more{
     font-size: small;
     caption-side:bottom;
+}
+
+.more_ho:hover{
+    color: blue;
+    cursor: pointer;
 }
 
 caption.more{
@@ -192,7 +202,7 @@ caption>a{
 
   /* Footer styles */
 footer {
-    height: 100px;
+    height: 60px;
     position: relative;
     transform: translateY(0%);
     bottom: 0;
@@ -200,9 +210,6 @@ footer {
     color: #fff;
     padding: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* width: 100%; */
 }
 
 .footer-nav ul {
@@ -212,6 +219,7 @@ footer {
 
 .footer-nav ul li {
     margin-right: 20px;
+    text-align: left;
 }
 
 .footer-nav ul li a {

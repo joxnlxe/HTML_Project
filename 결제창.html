@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>결제화면</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f7f7f7;
+    }
+    .logo{
+      clear: inherit;
+      position: absolute;
+      margin-top: 60px;
+      margin-left: 100px;
+      width: 200px;
+      padding: 10px;
+      float: left;
+    }
+    .payment-form {
+      margin: 0 auto;
+      position: relative;
+      top: 10%;
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 400px; 
+    }
+    .payment-form h2 {
+      margin-top: 0;
+    }
+    .payment-form label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    .payment-form select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .payment-form input{
+      width: 95%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .payment-form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      background-color: #095e82;
+      border: none;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .payment-form button:hover {
+      background-color: #d8e9f6;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo"><img src="FLYAWAY.png" class="img" width="200px"></div>
+  <div class="payment-form">
+    <h2>결제화면</h2>
+    <form>
+      <label for="cardType">카드 종류</label>
+      <select id="cardType" name="cardType">
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+      </select>
+
+      <label for="cardNumber">카드 번호</label>
+      <input type="text" id="cardNumber" name="cardNumber" placeholder="0000-0000-0000-0000" required>
+
+      <label for="expiryDate">유효기간</label>
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+
+      <label for="cvc">CVC</label>
+      <input type="text" id="cvc" name="cvc" required>
+
+      <label for="cardHolder">카드 명의</label>
+      <input type="text" id="cardHolder" name="cardHolder" required>
+
+      <label for="paymentOption">결제 방식</label>
+      <select id="paymentOption" name="paymentOption">
+        <option value="oneTime">일시불</option>
+        <option value="installment">할부1개월(무이자)</option>
+        <option value="installment">할부2개월(무이자)</option>
+        <option value="installment">할부3개월(무이자)</option>
+        <option value="installment">할부4개월(무이자)</option>
+        <option value="installment">할부5개월</option>
+        <option value="installment">할부6개월</option>
+      </select>
+
+      <a href="결제 완료창.html"><button type="button">결제하기</button></a>
+    </form>
+  </div>
+</body>
+</html>
