@@ -1,4 +1,4 @@
-/* Reset styles */
+/* 기본 스타일 설정 */
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #F8FDFF;
+    letter-spacing: 0.5px; /* 기본 자간 설정 */
 }
 
-/* Header styles */
+/* Header 스타일 */
 header {
     display: flex;
     justify-content: space-between;
@@ -17,10 +19,12 @@ header {
     padding: 20px;
     background-color: #C1DDF1;
     color: #fff;
+    letter-spacing: 1px; /* Header 자간 설정 */
 }
 
-/* Logo styles */
+/* 로고 */
 .logo a {
+    display: flex;
     color: #fff;
     text-decoration: none;
 }
@@ -29,7 +33,7 @@ header {
     width: 130px;
 }
 
-/* Main navigation styles */
+/* 메뉴 */
 nav.main ul {
     list-style-type: none;
     display: flex;
@@ -49,7 +53,7 @@ nav.main ul li a {
     text-decoration: none;
 }
 
-/* Authentication styles */
+/* 로그인, 회원가입 버튼 */
 .auth a {
     color: #fff;
     text-decoration: none;
@@ -71,96 +75,114 @@ button:hover {
     color: #fff;
 }
 
-/* Main section styles */
-.hero-section {
-    display: flex;
-    flex-direction: row;
-    margin-top: 50px;
+/* Hero 섹션 */
+.hero {
+    position: relative;
+    height: 500px;
 }
 
+/* Hero 내비게이션 */
 .hero-nav {
-    margin-left: 10%;
-    width: 20%;
+    width: 220px;
+    height: 670px;
+    float: left;
     background-color: #C1DDF1;
-    padding: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
     border-radius: 10px;
+    letter-spacing: 0.5px; /* Hero 내비게이션 자간 설정 */
 }
 
-.hero-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+.hero-nav ol {
+    list-style: none;
+    padding: 15%;
 }
 
-.hero-nav ul li {
-    margin-bottom: 10px;
+.hero-nav ol li {
+    list-style-position: inside;
+    margin-bottom: 50px;
 }
 
-.hero-nav ul li a {
+.hero-nav ol ul {
+    margin-top: 20px;
+    margin-left: 11px;
+}
+
+.hero-nav ol li a {
     text-decoration: none;
-    color: #000;
+    color: black;
 }
-
-.hero-nav ul li .submenu {
-    display: none;
-    list-style-type: none;
-    padding-left: 20px;
-}
-
-.hero-nav ul li:hover .submenu {
+nav.hero-nav a h1 {
     display: block;
+    
 }
 
-.hero-nav ul li .submenu li {
-    margin-bottom: 10px;
+
+/* 기사 섹션 */
+article {
+    background-color: white;
+    float: left;
+    width: 1000px;
+    height: 3800px;
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 5px solid #C1DDF1;
+    font-size: 20px;/* 기사 섹션 자간 설정 */
 }
 
-.hero-nav ul li .submenu li a {
-    color: #000;
-    text-decoration: none;
-}
-
-.hero-article {
+.item {
     display: flex;
     align-items: center;
-    width: 65%;
-    background-color: #C1DDF1;
-    padding: 20px;
+    gap: 20px; /* 이미지와 텍스트 간의 간격 */
+    border-top: 3px solid #ccc;
+    padding: 50px;
+    margin-bottom: -50px;
+    line-height: 1.8;
+}
+
+.item img {
+    width: 500px; /* 이미지 너비를 키웁니다 */
+    height: 300px; /* 이미지 비율을 유지합니다 */
     border-radius: 10px;
-    margin-left: 20px;
 }
 
-.content {
+.item div {
     display: flex;
     flex-direction: column;
 }
 
-.hotel-item {
-    display: flex;
-    margin-bottom: 20px;
-}
-
-.hotel-image {
-    width: 300px;
-    height: 200px;
-    margin-right: 20px;
-}
-
-.hotel-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.hotel-info h3 {
+.item div h1 {
+    text-align: left;
     margin-bottom: 10px;
 }
 
-.hotel-info p {
-    margin-bottom: 5px;
+/* 추가 설명 섹션 */
+.details {
+    padding: 20px;
 }
 
-/* Footer styles */
+.details h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+blockquote {
+    background-color: #f9f9f9;
+    border-left: 10px solid #C1DDF1;
+    margin: 1.5em 0;
+    padding: 0.5em 1em;
+}
+img[usemap] { /*맵 css*/
+    border: none;
+    height: 500px;
+    width: 900px;
+    margin-left: 30px;
+}
+
+
+/* Footer 스타일 */
 footer {
     position: fixed;
     bottom: 0;
@@ -171,6 +193,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    letter-spacing: 1px; /* Footer 자간 설정 */
 }
 
 .footer-nav ul {
@@ -185,6 +208,16 @@ footer {
 .footer-nav ul li a {
     color: #fff;
     text-decoration: none;
+}
+footer {
+    height: 60px;
+    position: relative;
+    transform: translateY(0%);
+    bottom: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
 }
 
 .social-media a {

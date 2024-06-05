@@ -8,7 +8,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color:  #F8FDFF;
-    position: relative;
 }
 
 /* Header styles (로고, 메뉴, 로그인)*/
@@ -78,6 +77,23 @@ button:hover{
     color: #fff;
 }
 
+
+
+/* 비디오 */
+.hero {
+    position: relative;
+    height: 500px;
+}
+
+video {
+    clear: both;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    text-align: center;
+    z-index: 9999;
+}
+
 .hero-nav {
     /* border-right: 1px solid gray; */
     width: 220px;
@@ -100,21 +116,20 @@ button:hover{
 
 article {
     background-color: white;
-    float: right;
-    width: 900px;
+    float: left;
+    width: 1000px;
     padding: 20px;
+    margin-left: 130px;
     margin-top: 50px;
-    margin-right: 60px;
     border-radius: 10px;
     border: 5px solid #C1DDF1;
-    
 }
 article div {
     padding: 50px;
 }
 article div h1{
-    float: right; 
-    text-align: left;
+   float: right; 
+   text-align: left;
 }
 
 article img {
@@ -144,13 +159,21 @@ article img {
     display: flex;
     align-items: center;
     gap: 10px; /* 이미지와 텍스트 간의 간격 */
-    border-bottom: 2px dashed #ccc;
 }
 
 .item div {
     display: flex;
     flex-direction: column; /* 수직으로 정렬 */
     border-radius: 10px;
+}
+
+.item div h1 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.item img {
+    width: 300px;
 }
 
 .item div h1 {
@@ -177,6 +200,7 @@ footer {
     color: #fff;
     padding: 20px;
     display: flex;
+    width: 100%;
 }
 
 .footer-nav ul {
@@ -201,6 +225,16 @@ footer {
     width: 30px;
     height: auto;
 }
+
+.map {
+    border-bottom: 2px dashed #ccc;
+    margin-top: -80px;
+}
+
+
+  
+
+
 
 
 
