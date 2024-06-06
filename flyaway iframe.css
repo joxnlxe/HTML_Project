@@ -92,14 +92,37 @@ body {
     background-color: #095E82;
     border: none;
     color: white;
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    width: 100%;
+    width: 700px;
+    text-align: center;
     transition: background-color 0.3s;
+    overflow: hidden;
+}
+.search{
+    position: relative;
+    top: -7px;
 }
 .search-btn:hover {
     background-color: #d8e9f6;
     color: black;
+}
+
+.search-btn.air{
+    position: relative;
+    margin-left: 10px;
+    width: 30px;
+
+}
+
+.search-btn:hover .air{
+    transform: translateX(50px) rotate(360deg);
+
+}
+
+.air{
+    width: 30px;
+    transition: transform 0.5s;
 }
