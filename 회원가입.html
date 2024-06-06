@@ -35,6 +35,14 @@
             position: relative;
         }
 
+        .register-box .user-box input[type="date"] {
+            color: transparent;
+        }
+
+        .register-box .user-box input[type="date"]:focus {
+            color: black;
+        }
+
         .register-box .user-box input {
             width: 100%;
             padding: 10px 0;
@@ -117,7 +125,7 @@
                 <label>이름:</label>
             </div>
             <div class="user-box">
-                <input type="text" name="birthdate" max="2005-12-31" required>
+                <input type="date" id="date-input" name="birthdate" max="2005-12-31" required >
                 <label>생년월일:</label>
             </div>
             <div class="user-box">
@@ -158,6 +166,9 @@
             }
         }
 
+        document.getElementById('date-input').addEventListener('change', function() {
+            this.style.color = 'black';
+        });
     </script>
 </body>
 </html>
