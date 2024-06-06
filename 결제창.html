@@ -86,10 +86,10 @@
       <input type="text" id="cardNumber" name="cardNumber" placeholder="0000-0000-0000-0000" required class="in">
 
       <label for="expiryDate">유효기간</label>
-      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required class="in">
+      <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" maxlength="5" required class="in">
 
       <label for="cvc">CVC</label>
-      <input type="text" id="cvc" name="cvc" required class="in">
+      <input type="password" id="cvc" name="cvc" required maxlength="3" class="in">
 
       <label for="cardHolder">카드 명의</label>
       <input type="text" id="cardHolder" name="cardHolder" required class="in">
