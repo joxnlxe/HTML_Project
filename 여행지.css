@@ -191,8 +191,9 @@ div.main{
     min-height: 1700px;
 }
 
-footer {
-    height: 60px;
+  /* Footer styles */
+  footer {
+    height: 90px;
     position: relative;
     transform: translateY(0%);
     bottom: 0;
@@ -200,16 +201,27 @@ footer {
     color: #fff;
     padding: 20px;
     display: flex;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 수직 정렬을 위해 추가 */
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column; /* 수직 정렬을 위해 추가 */
+    align-items: center;
 }
 
 .footer-nav ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row; /* 항목을 수평으로 나열 */
+    margin: 10px 0; /* ul 사이의 간격 추가 */
 }
 
 .footer-nav ul li {
     margin-right: 20px;
+    text-align: center;
 }
 
 .footer-nav ul li a {
