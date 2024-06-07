@@ -4,9 +4,9 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: #f9f9f9;
-    
 }
 
+/* Header styles (로고, 메뉴, 로그인)*/
 header {
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@ header {
     background-color: #C1DDF1;
     color: #fff;
 }
-
+/*로고*/
 .logo a {
     position: relative;
     right: 30px;
@@ -29,7 +29,7 @@ header {
 .pic{
     width: 130px;
 }
-
+/*메뉴*/
 nav.main ul { 
     list-style-type: none;
     display: flex;
@@ -73,18 +73,6 @@ button:hover{
     color: #fff;
 }
 
-header {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    background: #c1ddf1;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-header h1 {color: #333;
-    float: left;
-    margin: 0;
-}
-
 .container {
     position: relative;
     width: 80%;
@@ -93,24 +81,24 @@ header h1 {color: #333;
     overflow: hidden;
 }
 
-nav ul {
+nav.menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
     float: right;
 }
 
-nav ul li {
+nav.menu ul li {
     display: inline;
     margin-left: 20px;
 }
 
-nav ul li a {
+nav.menu ul li a {
     color: #333;
     text-decoration: none;
 }
 
-nav ul li a:hover{
+nav.menu ul li a:hover{
     text-decoration: underline;
 }
 
@@ -119,7 +107,6 @@ nav ul li a:hover{
 }
 
 .hero {
-    background: url('hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
@@ -153,7 +140,6 @@ p {
 .restaurant {
     text-align: center;
     margin-bottom: 2rem;
-    flex: 1 1 calc(33.333% - 1rem);
     margin: 0.5rem;
     background: #fff;
     padding: 1rem;
@@ -168,10 +154,6 @@ p {
     flex-wrap: wrap;
 }
 
-.restaurant:hover {
-    transform: translateY(-10px);
-}
-
 .restaurant img {
     width: 100%;
     max-width: 300px;
@@ -179,10 +161,6 @@ p {
     display: block;
     margin: 0 auto;
     transition: transform 0.3s ease;
-}
-
-.restaurant:hover img {
-    transform: scale(1.1);
 }
 
 form {

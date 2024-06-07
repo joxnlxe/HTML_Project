@@ -46,18 +46,6 @@ div.ad_a{
     text-align: center;
 }
 
-/* audio.music{
-    opacity: 0;
-}
-div.audio{
-    background-color: #C1DDF1;
-}
-.music:hover{
-    visibility: visible;
-    opacity: 0.8;
-} */
-
-
 /* Header styles (로고, 메뉴, 로그인)*/
 header {
     display: flex;
