@@ -103,10 +103,18 @@ nav.menu ul li a:hover{
 }
 
 .link{
-    border-bottom: 2px solid #C1DDF1;
+    border-bottom: 1px solid #C1DDF1;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .hero {
+    background: url('hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 5rem 0;
@@ -140,6 +148,7 @@ p {
 .restaurant {
     text-align: center;
     margin-bottom: 2rem;
+    flex: 1 1 calc(33.333% - 1rem);
     margin: 0.5rem;
     background: #fff;
     padding: 1rem;
@@ -148,26 +157,20 @@ p {
     transition: transform 0.3s ease;
 }
 
-.restaurants {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
 .restaurant img {
     width: 100%;
     max-width: 300px;
     height: 20rem;
     display: block;
     margin: 0 auto;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
-}
+}  
 
 form input, form textarea {
     width: 100%;
