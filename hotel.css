@@ -18,7 +18,7 @@ div.container{
 }
 
 div.main{
-    min-height: 2600px;
+    min-height: 2900px;
 }
 
 
@@ -137,10 +137,10 @@ nav.hero-nav a h1 {
 article {
     background-color: white;
     float: left;
-    width: 1000px;
+    width: 900px;
     height: auto;
     padding: 20px;
-    margin-left: 130px;
+    margin-left: 70px;
     margin-top: 50px;
     border-radius: 10px;
     border: 5px solid #C1DDF1;
@@ -193,7 +193,7 @@ blockquote {
 
 
   /* Footer styles */
-  footer {
+footer {
     height: 90px;
     position: relative;
     transform: translateY(0%);
