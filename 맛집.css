@@ -1,9 +1,13 @@
-body {
-    font-family: 'Arial', sans-serif;
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #f9f9f9;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:  #F8FDFF;
+    position: relative;
 }
 
 /* Header styles (로고, 메뉴, 로그인)*/
@@ -40,14 +44,23 @@ nav.main ul li {
     font-weight: bold;
 }
 
-nav.main ul li:hover {
+nav.main ul li.lili:hover {
     text-decoration: underline;
 }
 
+nav.main ul li.hang:hover{
+    text-decoration: none;
+}
+      
 nav.main ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+nav.main ul .hang{
+    color: #095E82;
+}
+
 /*로그인, 회원가입 창*/
 .auth a {
     position: relative;
