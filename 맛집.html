@@ -28,8 +28,8 @@
     </div>
   </header>
 
-  <section class="link">
-    <div class="container">  
+  <section class="link" id="link">
+    <div class="container_link">  
       <nav class="menu">
         <ul>
           <li><a href="#home">홈</a></li>
@@ -41,14 +41,16 @@
     </div>
   </section>
 
-  <br><br><br><br><br><br><br><br><br><br>
+  <a href="#link"><input type="button" id="top" value="top"></a>
+
+  <br><br><br><br><br><br>
   <section id="home" class="hero">
     <div class="container">
       <h2>환영합니다!</h2>
       <p>flyaway에서 가장 인기 있는 맛집들을 소개합니다.</p>
     </div>
   </section>
-  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br>
 
   <br><br><hr>
 <section id="home" class="hero">
@@ -240,7 +242,7 @@
   <section id="contact">
     <div class="container">
       <h2>리뷰</h2>
-      <p>리뷰를 통해 다양한 혜택들을 받아보세요! (사진은 꼭 첨부 안하셔도 됩니다.)</p>
+      <p>리뷰를 통해 다양한 혜택들을 받아보세요!</p>
       <form>
         <input type="range" max="5" min="1" step="1" value="3">
         <div class="rating-labels">
@@ -253,7 +255,9 @@
         <input type="text" placeholder="아이디" required>
         <input type="email" placeholder="이메일 주소" required>
         <textarea placeholder="리뷰" required></textarea>
-        <h3>리뷰 사진 첨부하기</h3><input type="file">
+        <h3>리뷰 사진 첨부하기</h3>
+        <input type="text" value="(사진은 꼭 첨부 안하셔도 됩니다.)" readonly style="text-align: center;">
+        <input type="file">
         <button type="submit">보내기</button>
         <button type="reset">다시쓰기</button>
       </form>

@@ -119,6 +119,22 @@ nav.menu ul li a:hover{
     border-bottom: 1px solid #C1DDF1;
 }
 
+.container_link{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px; 
+}
+
+#top{
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    border-radius: 50px;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+}
+
 .container {
     position: relative;
     width: 80%;
