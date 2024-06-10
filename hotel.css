@@ -56,14 +56,23 @@ nav.main ul li {
     font-weight: bold;
 }
 
-nav.main ul li:hover {
+nav.main ul li.lili:hover {
     text-decoration: underline;
 }
 
+nav.main ul li.hang:hover{
+    text-decoration: none;
+}
+      
 nav.main ul li a {
     color: #fff;
     text-decoration: none;
 }
+
+nav.main ul .hang{
+    color: #095E82;
+}
+
 /*로그인, 회원가입 창*/
 .auth a {
     position: relative;
