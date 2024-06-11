@@ -86,10 +86,25 @@ button:hover{
     color: #fff;
 }
 
+#top{
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    border-radius: 50px;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    z-index: 99;
+    }
+
+#top:hover {
+        background-color: #b5e7ff;
+    }
+
+/*사이드바*/
 .hero-nav {
     /* border-right: 1px solid gray; */
     width: 220px;
-    height: 600px;
+    height: 61vh;
     float: left;
     background-color: white;
     border: 5px solid #C1DDF1;
@@ -99,7 +114,6 @@ button:hover{
 }
 .hero-nav ol {
     list-style: none;
-    margin-left: 0px;
     padding: 15%;
 }
 
@@ -117,9 +131,11 @@ article {
     border-radius: 10px;
     border: 5px solid #C1DDF1;
 }
+
 article div {
     padding: 50px;
 }
+
 article div h1{
     float: right; 
     text-align: left;
@@ -131,21 +147,17 @@ article img {
 
 .hero-nav ol li {
     list-style-position: inside; 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .hero-nav ol ul {
     margin-top: 20px;
+    margin-left: 11px;
     /* color: #fff; */
 }
 .hero-nav ol li a{
     /* color: #fff; */
     color: black;
-}
-
-.hero-nav ol ul {
-    margin-left: 11px;
-    font-size: 14px;
 }
 
 .hero-nav ol ul li {
@@ -251,11 +263,21 @@ footer {
 .olli:hover {
     background-color: #C1DDF1;
     border-radius: 10px;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding: 10px 20px;
+}
+
+.ulli {
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
 }
 
 .ulli:hover {
     background-color: #C1DDF1;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 #ollim {

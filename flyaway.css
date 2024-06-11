@@ -122,7 +122,19 @@ button:hover{
     color: #fff;
 }
 
+#top{
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    border-radius: 50px;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    z-index: 99;
+    }
 
+#top:hover {
+        background-color: #b5e7ff;
+    }
 
 /* 비디오 */
 .hero {
@@ -150,9 +162,9 @@ video {
 
 .iframe{
     width: 750px;
-    height: 384px;
+    height: 390px;
     border-radius: 15px;
-    border: 0.5px solid #ccc;
+    border: 2px solid #ccc;
 }
 
 div.recommendations{

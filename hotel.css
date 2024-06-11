@@ -18,7 +18,7 @@ div.container{
 }
 
 div.main{
-    min-height: 2900px;
+    min-height: 3500px;
 }
 
 
@@ -98,6 +98,19 @@ button:hover{
     color: #fff;
 }
 
+#top{
+    position: fixed;
+    bottom: 2%;
+    right: 10px;
+    border-radius: 50px;
+    border: 0.5px solid #ccc;
+    padding: 10px;
+    z-index: 99;
+    }
+
+#top:hover {
+        background-color: #b5e7ff;
+    }
 
 /* Hero 섹션 */
 .hero {
@@ -108,7 +121,7 @@ button:hover{
 /* Hero 내비게이션 */
 .hero-nav {
     width: 230px;
-    height: 730px;
+    height: 73vh;
     float: left;
     background-color: white;
     border: 5px solid #C1DDF1;
@@ -125,7 +138,7 @@ button:hover{
 
 .hero-nav ol li {
     list-style-position: inside;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .hero-nav ol ul {
@@ -151,9 +164,17 @@ nav.hero-nav a h1 {
     margin-right: -20px;
     margin-left: -20px;
 }
+
+.ulli {
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
 .ulli:hover{
     background-color: #C1DDF1;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 #ollim{
     background-color: #C1DDF1;

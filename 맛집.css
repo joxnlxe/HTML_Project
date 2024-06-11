@@ -138,6 +138,10 @@ nav.menu ul li a:hover{
         padding: 10px;
         }
 
+    #top:hover {
+        background-color: #b5e7ff;
+    }
+
         /*사이드 바*/
         .sidebar {
             width: 120px;
