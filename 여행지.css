@@ -239,6 +239,10 @@ footer {
     text-decoration: none;
 }
 
+.footer-nav ul li a:hover {
+    text-decoration: underline;
+}
+
 .social-media a {
     margin-left: 10px;
 }
