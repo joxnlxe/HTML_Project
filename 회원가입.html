@@ -113,6 +113,9 @@
             text-align: left;
             margin-top: 5px;
         }
+        datalist{
+            display:none;
+        }
     </style>
 </head>
 <body>
@@ -146,7 +149,23 @@
                 <label>이메일:</label>
             </div>
             <div class="user-box">
-                <input type="text" name="country" required>
+                <input type="text" name="country" list="countries" required>
+                <datalist id="countries">
+                    <option value="대한민국"></option>
+                    <option value="중국"></option>
+                    <option value="일본"></option>
+                    <option value="러시아"></option>
+                    <option value="싱가포르"></option>
+                    <option value="말레이시아"></option>
+                    <option value="태국"></option>
+                    <option value="베트남"></option>
+                    <option value="미국"></option>
+                    <option value="캐나다"></option>
+                    <option value="멕시코"></option>
+                    <option value="쿠바"></option>
+                    <option value="프랑스"></option>
+                    <option value="영국"></option>
+                </datalist>
                 <label>거주국가:</label>
             </div>
             <button type="submit" class="action-btn" value="gogo" onclick="location.href='회원가입축하.html'">가입하기</button>

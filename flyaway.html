@@ -11,9 +11,10 @@
 </head>
 
 <body>
-  <div class="contaniner" id="link">
+  <div class="container" id="link">
     <div class="main">
-      <div class="ad">
+
+      <div class="ad"> <!--광고판-->
         <canvas id="ad" width="230" height="70" style="background-color: white;"></canvas>
         <div class="ad_a">
           <p class="ad">캐리어가 단돈 <span class="ad"><mark style="color: red;">19,900</mark>원</span> !!!</p>
@@ -21,16 +22,13 @@
               width="170"></a>
         </div>
       </div>
-      <!-- <div class="audio">
-        <audio autoplay loop controls class="music">
-          <source src="main music.mp3" type="audio/mp3">
-        </audio>
-      </div> -->
-      <header> <!--로고, 메뉴, 로그인 및 회원가입-->
-        <div class="logo">
+
+      <header>
+        <div class="logo"> <!--로고-->
           <a href="flyaway.html"><img src="FLYAWAY.png" class="pic"></a>
         </div>
-        <nav class="main">
+
+        <nav class="main"> <!--head nav-->
           <ul>
             <li><a href="flyaway.html" class="hang">항공</a></li>
             <li class="lili"><a href="호텔_추천.html">호텔</a></li>
@@ -38,6 +36,7 @@
             <li class="lili"><a href="여행지_여수.html">여행지</a></li>
           </ul>
         </nav>
+
         <div class="auth">
           <a href="회원가입.html" target="_blank"><button type="button" class="action-btn" value="고고룽">회원가입</button></a>
           <a href="login_page.html" target="_blank"><button type="button" class="action-btn"
@@ -45,105 +44,112 @@
         </div>
       </header>
 
-      <a href="#link"><input type="button" id="top" value="top"></a>
+      <a href="#link"><input type="button" id="top" value="top"></a> <!--top 버튼-->
 
       <section class="hero"> <!--비디오-->
         <video autoplay muted loop>
           <source src="flyaway1.mp4" type="video/mp4">
-          Your browser does not support the video tag.
         </video>
-        <!-- <div class="overlay"></div> -->
-        <div class="search-box"> <!--검색창-->
+        <div class="search-box"> <!--검색창(iframe)-->
           <iframe src="flyaway iframe.html" class="iframe"></iframe>
         </div>
       </section>
 
-      <div class="recommendations">
-        <table>
-          <caption class="up">추천 호텔</caption>
-          <caption class="more"><a href="호텔_추천.html" class="more_ho">더보기</caption></a>
-          <tr>
-            <td class="recommend">
-              <figure>
-                <a href="호텔_김포.html#imgod2"><canvas id="hotelCanvas1" width="250" height="200"></canvas></a>
-                <figcaption>김포 - 롯데시티호텔</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="호텔_김해.html#imgod"><canvas id="hotelCanvas2" width="250" height="200"></canvas></a>
-                <figcaption>김해 - 롯데호텔 부산</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="호텔_인천.html#imgod2"><canvas id="hotelCanvas3" width="250" height="200"></canvas></a>
-                <figcaption>인천 - 더 위크앤 리조트</figcaption>
-              </figure>
-            </td>
-          </tr>
-        </table>
-      </div>
+      <section>
 
-      <div class="recommendations">
-        <table>
-          <caption class="up">추천 맛집</caption>
-          <caption class="more"><a href="맛집.html" class="more_ho">더보기</a></caption>
-          <tr>
-            <td class="recommend">
-              <figure>
-                <a href="맛집.html#food"><canvas id="restaurantCanvas1" width="250" height="200"></canvas></a>
-                <figcaption>김포 - 도일처</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="맛집.html#food2"><canvas id="restaurantCanvas2" width="250" height="200"></canvas></a>
-                <figcaption>제주도 - 돗담</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="맛집.html#food3"><canvas id="restaurantCanvas3" width="250" height="200"></canvas></a>
-                <figcaption>제주도 - 마루해물라면</figcaption>
-              </figure>
-            </td>
-          </tr>
-        </table>
-      </div>
+        <article> <!--추천 호텔-->
+          <div class="recommendations">
+            <table>
+              <caption class="up">추천 호텔</caption>
+              <caption class="more"><a href="호텔_추천.html" class="more_ho">더보기</caption></a>
+              <tr>
+                <td class="recommend">
+                  <figure>
+                    <a href="호텔_김포.html#imgod2"><canvas id="hotelCanvas1" width="250" height="200"></canvas></a>
+                    <figcaption>김포 - 롯데시티호텔</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="호텔_김해.html#imgod"><canvas id="hotelCanvas2" width="250" height="200"></canvas></a>
+                    <figcaption>김해 - 롯데호텔 부산</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="호텔_인천.html#imgod2"><canvas id="hotelCanvas3" width="250" height="200"></canvas></a>
+                    <figcaption>인천 - 더 위크앤 리조트</figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </article>
 
-      <div class="recommendations">
-        <table>
-          <caption class="up">추천 여행지</caption>
-          <caption class="more"><a href="여행지_여수.html" class="more_ho">더보기</a></caption>
-          <tr>
-            <td class="recommend">
-              <figure>
-                <a href="여행지_김해.html#imgod2"><canvas id="destinationCanvas1" width="250" height="200"></canvas></a>
-                <figcaption>김해 - 가야 테마파크</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="여행지_여수.html#imgod2"><canvas id="destinationCanvas2" width="250" height="200"></canvas></a>
-                <figcaption>여수 - 아쿠아플라넷</figcaption>
-              </figure>
-            </td>
-            <td class="recommend">
-              <figure>
-                <a href="여행지_제주.html#imgod2"><canvas id="destinationCanvas3" width="250" height="200"></canvas></a>
-                <figcaption>제주도 - 오설록 티 뮤지엄</figcaption>
-              </figure>
-            </td>
-          </tr>
-        </table>
-      </div>
+        <article> <!--추천 맛집-->
+          <div class="recommendations">
+            <table>
+              <caption class="up">추천 맛집</caption>
+              <caption class="more"><a href="맛집.html" class="more_ho">더보기</a></caption>
+              <tr>
+                <td class="recommend">
+                  <figure>
+                    <a href="맛집.html#food"><canvas id="restaurantCanvas1" width="250" height="200"></canvas></a>
+                    <figcaption>김포 - 도일처</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="맛집.html#food2"><canvas id="restaurantCanvas2" width="250" height="200"></canvas></a>
+                    <figcaption>제주도 - 돗담</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="맛집.html#food3"><canvas id="restaurantCanvas3" width="250" height="200"></canvas></a>
+                    <figcaption>제주도 - 마루해물라면</figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </article>
+
+        <article> <!--추천 여행지-->
+          <div class="recommendations">
+            <table>
+              <caption class="up">추천 여행지</caption>
+              <caption class="more"><a href="여행지_여수.html" class="more_ho">더보기</a></caption>
+              <tr>
+                <td class="recommend">
+                  <figure>
+                    <a href="여행지_김해.html#imgod2"><canvas id="destinationCanvas1" width="250" height="200"></canvas></a>
+                    <figcaption>김해 - 가야 테마파크</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="여행지_여수.html#imgod2"><canvas id="destinationCanvas2" width="250" height="200"></canvas></a>
+                    <figcaption>여수 - 아쿠아플라넷</figcaption>
+                  </figure>
+                </td>
+                <td class="recommend">
+                  <figure>
+                    <a href="여행지_제주.html#imgod2"><canvas id="destinationCanvas3" width="250" height="200"></canvas></a>
+                    <figcaption>제주도 - 오설록 티 뮤지엄</figcaption>
+                  </figure>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </section>
 
       <script>
         /*AD*/
-        var can = document.getElementById("ad");/*캔버스 가져옴*/
-        var context = can.getContext("2d"); /*2d로 만듦*/
-        context.beginPath();    /*필수*/
+        var can = document.getElementById("ad");
+        var context = can.getContext("2d");
+        context.beginPath();
         context.font = "30px arial";
         context.strokeStyle = "red";
         context.lineWidth = 1;
@@ -154,7 +160,8 @@
         context.textAlign = "center";
         context.fillText("초 특 가", 120, 50);
 
-        /*hotel canvas*/
+
+        /*hotel*/
         var canvas1 = document.getElementById("hotelCanvas1");
         var context1 = canvas1.getContext("2d");
         var img1 = new Image();
@@ -162,6 +169,7 @@
           context1.drawImage(img1, 0, 0, canvas1.width, canvas1.height);
         }
         img1.src = "사진/호텔/김포/롯데시티호텔.jpg";
+
         var canvas2 = document.getElementById("hotelCanvas2");
         var context2 = canvas2.getContext("2d");
         var img2 = new Image();
@@ -169,6 +177,7 @@
           context2.drawImage(img2, 0, 0, canvas2.width, canvas2.height);
         }
         img2.src = "사진/호텔/김해/롯데 호텔 부산.jpg";
+
         var canvas3 = document.getElementById("hotelCanvas3");
         var context3 = canvas3.getContext("2d");
         var img3 = new Image();
@@ -176,10 +185,11 @@
           context3.drawImage(img3, 0, 0, canvas3.width, canvas3.height);
         }
         img3.src = "사진/호텔/인천/더 위크앤 리조트.jpg";
+
+
         /* 맛집 canvas */
         var canvas4 = document.getElementById("restaurantCanvas1");
         var context4 = canvas4.getContext("2d");
-
         var img4 = new Image();
         img4.onload = function () {
           context4.drawImage(img4, 0, 0, canvas4.width, canvas4.height);
@@ -188,7 +198,6 @@
 
         var canvas5 = document.getElementById("restaurantCanvas2");
         var context5 = canvas5.getContext("2d");
-
         var img5 = new Image();
         img5.onload = function () {
           context5.drawImage(img5, 0, 0, canvas5.width, canvas5.height);
@@ -197,7 +206,6 @@
 
         var canvas6 = document.getElementById("restaurantCanvas3");
         var context6 = canvas6.getContext("2d");
-
         var img6 = new Image();
         img6.onload = function () {
           context6.drawImage(img6, 0, 0, canvas6.width, canvas6.height);
@@ -207,7 +215,6 @@
         /* 여행지 canvas */
         var canvas7 = document.getElementById("destinationCanvas1");
         var context7 = canvas7.getContext("2d");
-
         var img7 = new Image();
         img7.onload = function () {
           context7.drawImage(img7, 0, 0, canvas7.width, canvas7.height);
@@ -216,7 +223,6 @@
 
         var canvas8 = document.getElementById("destinationCanvas2");
         var context8 = canvas8.getContext("2d");
-
         var img8 = new Image();
         img8.onload = function () {
           context8.drawImage(img8, 0, 0, canvas8.width, canvas8.height);
@@ -225,7 +231,6 @@
 
         var canvas9 = document.getElementById("destinationCanvas3");
         var context9 = canvas9.getContext("2d");
-
         var img9 = new Image();
         img9.onload = function () {
           context9.drawImage(img9, 0, 0, canvas9.width, canvas9.height);
@@ -242,7 +247,6 @@
         <li><a href="이용약관.html">개인정보 처리방침</a></li>
         <li><a href="">고객센터</a></li>
       </ul>
-
       <ul style="opacity: 0.5;">
         <li>제작자:</li>
         <li>강예솔</li>
