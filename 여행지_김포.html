@@ -1,87 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flyaway Airlines</title>
-    <style>
-      @import url(여행지.css);
-    </style>
-  </head>
-  
-  <body>
-    <div class="container" id="link">
-      <div class="main">
-    <header> <!--로고, 메뉴, 로그인 및 회원가입-->
-      <div class="logo">
-        <a href="flyaway.html"><img src="FLYAWAY.png" class="pic"></a>
-      </div>
-      <nav class="main">
-        <ul>
-          <li class="lili"><a href="flyaway.html">항공</a></li>
-          <li class="lili"><a href="호텔_추천.html">호텔</a></li>
-          <li class="lili"><a href="맛집.html">맛집</a></li>
-          <li><a href="여행지_여수.html" class="hang">여행지</a></li>
-        </ul>
-      </nav>
-      <div class="auth">
-        <a href="회원가입.html"><button type="button" class="action-btn" value="고고룽">회원가입</button></a>
-        <a href="login_page.html"><button type="button" class="action-btn" value="고고씽">로그인</button></a>
-      </div>
-    </header>
-    
-    <a href="#link"><input type="button" id="top" value="top"></a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flyaway Airlines</title>
+  <style>
+    @import url(여행지.css);
+  </style>
+</head>
 
-    <div class="background-image">
-    <section class="hero">
-      <nav class="hero-nav">
+<body>
+  <div class="container" id="link">
+    <div class="main">
+      <header> <!--로고, 메뉴, 로그인 및 회원가입-->
+        <div class="logo">
+          <a href="flyaway.html"><img src="FLYAWAY.png" class="pic"></a>
+        </div>
+        <nav class="main">
+          <ul>
+            <li class="lili"><a href="flyaway.html">항공</a></li>
+            <li class="lili"><a href="호텔_추천.html">호텔</a></li>
+            <li class="lili"><a href="맛집.html">맛집</a></li>
+            <li><a href="여행지_여수.html" class="hang">여행지</a></li>
+          </ul>
+        </nav>
+        <div class="auth">
+          <a href="회원가입.html"><button type="button" class="action-btn" value="고고룽">회원가입</button></a>
+          <a href="login_page.html"><button type="button" class="action-btn" value="고고씽">로그인</button></a>
+        </div>
+      </header>
+
+      <a href="#link"><input type="button" id="top" value="top"></a>
+
+      <div class="background-image"></div>
+
+      <aside class="hero-nav">
         <ol>
-          <li><a href="여행지_여수.html"><h1 class="olli">여수</h1></a></li>
+          <li><a href="여행지_여수.html"><h3 class="olli">여수</h3></a></li>
 
-          <li><a href="여행지_김포.html"><h1 id="ollim">김포</h1></a>
+          <li><a href="여행지_김포.html"><h3 id="ollim">김포</h3></a>
             <ul>
               <li><a href="#imgod" class="ulli">포레리움</a></li>
               <li><a href="#imgod2" class="ulli">수산공원</a></li>
             </ul>
           </li>
-          <li><a href="여행지_제주.html"><h1 class="olli">제주</h1></a></li>
-          
-          <li><a href="여행지_인천.html"><h1 class="olli">인천</h1></a></li>
-          
-          <li><a href="여행지_김해.html"><h1 class="olli">김해</h1></a></li>
+          <li><a href="여행지_제주.html"><h3 class="olli">제주</h3></a></li>
+
+          <li><a href="여행지_인천.html"><h3 class="olli">인천</h3></a></li>
+
+          <li><a href="여행지_김해.html"><h3 class="olli">김해</h3></a></li>
         </ol>
-      </nav>
-      <article class="hero-article">
-        <div class="item" id="imgod">
-          <img src="사진/여행지/김포_포레리움.PNG" alt="">
-          <div>
-            <h1>포레리움</h1>
-            <p>경험의 땅 포레리움에 오신 것을 환영합니다. 작은 산 끝자락, 곳곳에 흩뿌려진 건물들은 제각기 다른 경험을 제공합니다</p>
-            <br>
-            <p><b>위치 : </b><em>경기도 김포시 양촌읍 양곡2로 134-60</em></p>
+      </aside>
+
+      <section class="hero">
+        <article class="hero-article">
+          <div class="item" id="imgod">
+            <img src="사진/여행지/김포_포레리움.PNG" alt="">
+            <div>
+              <h1>포레리움</h1>
+              <p id="ls">경험의 땅 포레리움에 오신 것을 환영합니다. 작은 산 끝자락, 곳곳에 흩뿌려진 건물들은 제각기 다른 경험을 제공합니다</p>
+              <br>
+              <p><b>위치 : </b><em>경기도 김포시 양촌읍 양곡2로 134-60</em></p>
+            </div>
           </div>
-        </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.3195266062944!2d126.62645127661976!3d37.66519907201308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c87d621d28583%3A0x53588d9ad1ff6384!2z7Y-s66CI66as7JuA!5e0!3m2!1sko!2skr!4v1717591720004!5m2!1sko!2skr" width="760" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="item" id="imgod2">
-          <img src="사진/여행지/김포_수산공원.PNG" alt="">
-          <div>
-          <h1>수산공원</h1>
-          <p>수산공원은 김포를 대표하는 초대형 복합문화공간 입니다.</p>
-          <br>
-          <p><b>위치 : </b><em>경기도 김포시 대곶면 대명항1로 52</em></p>
-        </div>
-        </div>
-        <div class="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.2797951091366!2d126.5430534766189!3d37.642625572018936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c7f3dec2e9737%3A0xbc762dcf5e659030!2z7IiY7IKw6rO17JuQ!5e0!3m2!1sko!2skr!4v1717591793082!5m2!1sko!2skr" width="760" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </article>
-    </section>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3158.3195266062944!2d126.62645127661976!3d37.66519907201308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c87d621d28583%3A0x53588d9ad1ff6384!2z7Y-s66CI66as7JuA!5e0!3m2!1sko!2skr!4v1717591720004!5m2!1sko!2skr"
+              width="760" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="item" id="imgod2">
+            <img src="사진/여행지/김포_수산공원.PNG" alt="">
+            <div>
+              <h1>수산공원</h1>
+              <p id="ls">수산공원은 김포를 대표하는 초대형 복합문화공간 입니다.</p>
+              <br>
+              <p><b>위치 : </b><em>경기도 김포시 대곶면 대명항1로 52</em></p>
+            </div>
+          </div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3159.2797951091366!2d126.5430534766189!3d37.642625572018936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c7f3dec2e9737%3A0xbc762dcf5e659030!2z7IiY7IKw6rO17JuQ!5e0!3m2!1sko!2skr!4v1717591793082!5m2!1sko!2skr"
+              width="760" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </article>
+      </section>
+    </div>
   </div>
-  </div>
-  </div>
+
   <footer> <!--footer-->
     <div class="footer-nav">
       <ul>
@@ -89,7 +97,7 @@
         <li><a href="이용약관.html">개인정보 처리방침</a></li>
         <li><a href="">고객센터</a></li>
       </ul>
-      
+
       <ul style="opacity: 0.5;">
         <li>제작자:</li>
         <li>강예솔</li>
@@ -101,6 +109,6 @@
       </ul>
     </div>
   </footer>
-  </body>
-  
+</body>
+
 </html>
