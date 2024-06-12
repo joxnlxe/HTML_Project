@@ -13,12 +13,12 @@ body {
 
 div.container{
     height: auto;
-    min-height: 100%;
-    padding-bottom: 1000px;
+    min-height: 10px;
+    padding-bottom: 300px;
 }
 
 div.main{
-    min-height: 1800px;
+    min-height: 1600px;
 }
 
 /*광고판*/
