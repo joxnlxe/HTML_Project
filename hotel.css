@@ -63,7 +63,7 @@ nav.main ul li.lili:hover {
 nav.main ul li.hang:hover{
     text-decoration: none;
 }
-      
+
 nav.main ul li a {
     color: #fff;
     text-decoration: none;
@@ -247,7 +247,6 @@ blockquote {
 footer {
     height: 90px;
     position: relative;
-    transform: translateY(0%);
     bottom: 0;
     background-color: #333;
     color: #fff;
@@ -286,14 +285,6 @@ footer {
     text-decoration: underline;
 }
 
-.social-media a {
-    margin-left: 10px;
-}
-
-.social-media img {
-    width: 30px;
-    height: auto;
-}
 .background-image {
     background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('사진/호텔/김포/배경.jpg'); /* 배경 이미지 경로 */
     background-size: cover;
@@ -301,3 +292,7 @@ footer {
     height: 300px; /* 필요에 따라 높이 조절 */
 }
 
+.hotel-image{
+    width: 700px;
+    
+}

@@ -235,7 +235,6 @@ footer {
     height: 90px;
     margin-top: 125px;
     position: relative;
-    transform: translateY(0%);
     bottom: 0;
     background-color: #333;
     color: #fff;
@@ -284,4 +283,8 @@ footer {
     background-size: cover;
     background-position: center;
     height: 300px; /* 필요에 따라 높이 조절 */
+}
+
+.hotel-image{
+    width: 700px;
 }
