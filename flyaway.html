@@ -13,16 +13,23 @@
 <body>
   <div class="container" id="link">
     <div class="main">
-
-      <div class="ad"> <!--광고판-->
-        <canvas id="ad" width="230" height="70" style="background-color: white;"></canvas>
-        <div class="ad_a">
-          <p class="ad">캐리어가 단돈 <span class="ad"><mark style="color: red;">19,900</mark>원</span> !!!</p>
-          <a href="https://www.musinsa.com/app/goods/1447194" target="_blank"><embed src="사진/AD 캐리어.jpg"
-              width="170"></a>
+      <section>
+        <div class="ad"> <!--광고판-->
+          <canvas id="ad" width="230" height="70" style="background-color: white;"></canvas>
+          <div class="ad_a">
+            <p class="ad">캐리어가 단돈 <span class="ad"><mark style="color: red;">19,900</mark>원</span> !!!</p>
+            <a href="https://www.musinsa.com/app/goods/1447194" target="_blank"><embed src="사진/AD 캐리어.jpg"
+                width="170"></a>
+          </div>
         </div>
-      </div>
 
+        <article class="bgaudio"> <!--음악-->
+          <label for="music" id="bglabel">BG play </label>
+          <audio controls loop id="bgmAudio">
+            <source src="music/main music.mp3" type="audio/mp3">
+          </audio>
+        </article>
+      </section>
       <header>
         <div class="logo"> <!--로고-->
           <a href="flyaway.html"><img src="FLYAWAY.png" class="pic"></a>
@@ -46,13 +53,19 @@
 
       <a href="#link"><input type="button" id="top" value="top"></a> <!--top 버튼-->
 
+
       <section class="hero"> <!--비디오-->
-        <video autoplay muted loop>
-          <source src="flyaway1.mp4" type="video/mp4">
-        </video>
-        <div class="search-box"> <!--검색창(iframe)-->
-          <iframe src="flyaway iframe.html" class="iframe"></iframe>
-        </div>
+        <article>
+          <video autoplay muted="muted" loop>
+            <source src="flyaway1.mp4" type="video/mp4">
+          </video>
+        </article>
+
+        <article>
+          <div class="search-box"> <!--검색창(iframe)-->
+            <iframe src="flyaway iframe.html" class="iframe"></iframe>
+          </div>
+        </article>
       </section>
 
       <section>
