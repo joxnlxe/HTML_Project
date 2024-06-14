@@ -235,7 +235,6 @@ footer {
     height: 90px;
     margin-top: 125px;
     position: relative;
-    transform: translateY(0%);
     bottom: 0;
     background-color: #333;
     color: #fff;

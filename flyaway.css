@@ -269,7 +269,6 @@ caption a{
 footer {
     height: 90px;
     position: relative;
-    transform: translateY(0%);
     bottom: 0;
     background-color: #333;
     color: #fff;
