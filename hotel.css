@@ -201,8 +201,7 @@ article {
 .item {
     display: flex;
     align-items: center;
-    gap: 20px; /* 이미지와 텍스트 간의 간격 */
-    border-bottom: 3px dotted #ccc;
+    gap: 25px; /* 이미지와 텍스트 간의 간격 */
     padding: 50px;
     margin-bottom: -30px;
     line-height: 1.8;
@@ -225,6 +224,22 @@ article {
 }
 
 /* 추가 설명 섹션 */
+.siz {
+    font-size: medium;
+}
+.siz2 {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.marg {
+    margin-bottom: 5px;
+}
+
+dl {
+    margin-top: 5px;
+}
+
 .details {
     padding: 20px;
 }
@@ -239,9 +254,18 @@ blockquote {
     border-left: 10px solid #C1DDF1;
     margin: 1.5em 0;
     padding: 0.5em 1em;
+    font-size: 16px;
 }
 
-
+/*map*/
+.map {
+    margin-bottom: 5%;
+    border-bottom: dotted 3px #ccc ;
+    padding-bottom: 8%;
+}
+.map img {
+    width: 100%;
+}
 
   /* Footer styles */
 footer {

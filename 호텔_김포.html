@@ -7,6 +7,10 @@
   <title>Flyaway</title>
   <style>
     @import url(hotel.css);
+
+    .details {
+      border-bottom: 3px dotted #ccc;
+    }
   </style>
 
 </head>
@@ -36,102 +40,113 @@
       <a href="#link"><input type="button" id="top" value="top"></a>
 
       <div class="background-image">
-      <section class="hero">
-        <nav class="hero-nav">
-          <ol>
-            <li><a href="호텔_추천.html"><h1 class="olli">호텔추천</h1></a></li>
-            <li><a href="호텔_여수.html"><h1 class="olli">여수</h1></a></li>
-            <li><a href="여행지_김포.html"><h1 id="ollim">김포</h1></a></li>
-            <ul>
-              <li><a href="#imgod2" class="ulli">롯데시티호텔</a></li>
-              <li><a href="#imgod3" class="ulli">마리나베이</a></li>
-              <li><a href="#imgod" class="ulli">메이필드</a></li>
-            </ul>
-            <li><a href="호텔_제주.html"><h1 class="olli">제주</h1></a></li>
-            <li><a href="호텔_인천.html"><h1 class="olli">인천</h1></a></li>
-            <li><a href="호텔_김해.html"><h1 class="olli">김해</h1></a></li>
-          </ol>
-        </nav>
-        <article class="hero-article">
-          <div class="item" id="imgod">
-            <img src="사진/호텔/김포/메이필드.jpg" alt="메이필드 호텔">
-            <div>
-              <h1>메이필드</h1>
-              <p>5성급</p>
-              <strong>위치:</strong>
-              <p>대한민국 서울 강서구 방화대로 94</p>
-              <p>체크인 15:00 체크아웃 11:00</p>
-              <p>전화: 02-2660-9000</p>
-              <dl>
-                <dt><strong>가격</strong></dt>
-                <dd><i> 평일14만원 주말:20만원</i></dd>
-              </dl>
+        <section class="hero">
+          <nav class="hero-nav">
+            <ol>
+              <li><a href="호텔_추천.html">
+                  <h1 class="olli">호텔추천</h1>
+                </a></li>
+              <li><a href="호텔_여수.html">
+                  <h1 class="olli">여수</h1>
+                </a></li>
+              <li><a href="여행지_김포.html">
+                  <h1 id="ollim">김포</h1>
+                </a></li>
+              <ul>
+                <li><a href="#imgod2" class="ulli">롯데시티호텔</a></li>
+                <li><a href="#imgod3" class="ulli">마리나베이</a></li>
+                <li><a href="#imgod" class="ulli">메이필드</a></li>
+              </ul>
+              <li><a href="호텔_제주.html">
+                  <h1 class="olli">제주</h1>
+                </a></li>
+              <li><a href="호텔_인천.html">
+                  <h1 class="olli">인천</h1>
+                </a></li>
+              <li><a href="호텔_김해.html">
+                  <h1 class="olli">김해</h1>
+                </a></li>
+            </ol>
+          </nav>
+          <article class="hero-article">
+            <div class="item" id="imgod">
+              <img src="사진/호텔/김포/메이필드.jpg" alt="메이필드 호텔">
+              <div>
+                <h1 class="marg">메이필드<br>★★★★★</h1>
+                <strong>위치:</strong>
+                <p class="siz">대한민국 서울 강서구 방화대로 94</p>
+                <p class="siz2">체크인 - 15:00<br>체크아웃 - 11:00</p>
+                <p class="siz">Tel) 02-2660-9000</p>
+                <dl>
+                  <dt><strong>가격</strong></dt>
+                  <dd class="siz"><i> 평일14만원 주말:20만원</i></dd>
+                </dl>
+              </div>
             </div>
-          </div>
-          <div class="details">
-            <h3>호텔 설명</h3>
-            <blockquote>
-              <p>호텔 내에는 유아풀과 테라피풀 등으로 구성된 수영장, 사우나, 골프 연습장, 산책로 등 다양한 부대시설이 마련되어 있습니다.</p>
-            </blockquote>
-            <h3>객실</h3>
-            <blockquote>
-              <p>객실은 온돌, 스위트, 디럭스 등의 다양한 타입으로 구성되어 있으며, 일부 객실은 복층구조로 되어있거나 작은 주방을 구비한 곳도 있습니다.</p>
-            </blockquote>
-          </div>
-          <div class="item" id="imgod2">
-            <img src="사진/호텔/김포/롯데시티호텔.jpg" alt="롯데시티호텔">
-            <div>
-              <h1>롯데시티호텔</h1>
-              <p>3성급</p>
-              <p>위치: 대한민국 서울 강서구 하늘길 38</p>
-              <p>체크인 15:00 체크아웃 12:00</p>
-              <p>전화: 02-6116-1000</p>
-              <dl>
-                <dt><strong>가격</strong></dt>
-                <dd><i> 평일12만원 주말:20만원</i></dd>
-              </dl>
-            </div>
-          </div>
-          <div class="details">
-            <blockquote>
+            <div class="details">
               <h3>호텔 설명</h3>
-              <p>이 호텔에는 무료 공용 주차장도 제공되고 있습니다. 인터넷, 프린트 등 문서작업이 가능한 독립된 비즈니스 공간도 마련되어 있습니다. </p>
-            </blockquote>
-            <h3>객실</h3>
-            <blockquote>
-              <p>총 190개의 모든 객실에는 에어컨 시설 및 슬리퍼 등이 구비되어 있습니다. 금고, 생수도 이용하실 수 있습니다. 또한, 레인 샤워기가 있는 전용 욕실이 갖춰진 객실도 마련되어
-                있습니다.침대 및 침구류는 편안한 숙면을 위한 해온(he:on) 베딩 시스템으로 구성되어 있습니다.</p>
-            </blockquote>
-          </div>
-          <div class="item" id="imgod3">
-            <img src="사진/호텔/김포/마리나베이.jpg" alt="마리나베이">
-            <div>
-              <h1>마리나베이</h1>
-              <p>5성급</p>
-              <p>위치:대한민국 경기도 김포 고촌읍 아라육로152번길 210-50</p>
-              <p>체크인:15:00 체크아웃:11:00</p>
-              <dl>
-                <dt><strong>가격</strong></dt>
-                <dd><i> 평일10만원 주말:12만원</i></dd>
-              </dl>
+              <blockquote>
+                <p>호텔 내에는 유아풀과 테라피풀 등으로 구성된 수영장, 사우나, 골프 연습장, 산책로 등 다양한 부대시설이 마련되어 있습니다.</p>
+              </blockquote>
+              <h3>객실</h3>
+              <blockquote>
+                <p>객실은 온돌, 스위트, 디럭스 등의 다양한 타입으로 구성되어 있으며, 일부 객실은 복층구조로 되어있거나 작은 주방을 구비한 곳도 있습니다.</p>
+              </blockquote>
             </div>
-          </div>
-          <div class="details">
-            <h3>호텔설명</h3>
-            <blockquote>
-              <p>호텔에는 피트니스 센터, 실내 수영장 및 루프탑 스카이풀, 키즈존, 게임룸 등의 부대 시설이 잘 마련되어 있습니다. 세탁기, 건조기, 자판기 등이 갖춰진 멀티룸도 있습니다.</p>
-            </blockquote>
-            <h3>객실</h3>
-            <blockquote>
-              <p>모든 424개 객실에는 고급 침구, 에어컨 외에도 특별한 숙박 경험을 위해 무료 WiFi, 금고도 마련되어 있습니다.이 밖에 다음과 같은 편의 시설 및 서비스를 모든 객실에서 이용하실
-                수 있습니다.</p>
-            </blockquote>
-          </div>
-        </article>
-      </section>
+            <div class="item" id="imgod2">
+              <img src="사진/호텔/김포/롯데시티호텔.jpg" alt="롯데시티호텔">
+              <div>
+                <h1 class="marg">롯데시티호텔<br>☆☆★★★</h1>
+                <p class="siz">위치: 대한민국 서울 강서구 하늘길 38</p>
+                <p class="siz2">체크인 - 15:00<br>체크아웃 - 12:00</p>
+                <p class="siz">Tel) 02-6116-1000</p>
+                <dl>
+                  <dt><strong>가격</strong></dt>
+                  <dd class="siz"><i> 평일12만원 주말:20만원</i></dd>
+                </dl>
+              </div>
+            </div>
+            <div class="details">
+              <h3>호텔 설명</h3>
+              <blockquote>
+                <p>이 호텔에는 무료 공용 주차장도 제공되고 있습니다. 인터넷, 프린트 등 문서작업이 가능한 독립된 비즈니스 공간도 마련되어 있습니다. </p>
+              </blockquote>
+              <h3>객실</h3>
+              <blockquote>
+                <p>총 190개의 모든 객실에는 에어컨 시설 및 슬리퍼 등이 구비되어 있습니다. 금고, 생수도 이용하실 수 있습니다. 또한, 레인 샤워기가 있는 전용 욕실이 갖춰진 객실도 마련되어
+                  있습니다.침대 및 침구류는 편안한 숙면을 위한 해온(he:on) 베딩 시스템으로 구성되어 있습니다.</p>
+              </blockquote>
+            </div>
+            <div class="item" id="imgod3">
+              <img src="사진/호텔/김포/마리나베이.jpg" alt="마리나베이">
+              <div>
+                <h1 class="marg">마리나베이<br>★★★★★</h1>
+                <p class="siz">위치:대한민국 경기도 김포 고촌읍 아라육로152번길 210-50</p>
+                <p class="siz2">체크인 - 15:00<br>체크아웃 - 11:00</p>
+                <p class="siz">Tel) 02-552-7008</p>
+                <dl>
+                  <dt><strong>가격</strong></dt>
+                  <dd class="siz"><i> 평일10만원 주말:12만원</i></dd>
+                </dl>
+              </div>
+            </div>
+            <div class="details">
+              <h3>호텔설명</h3>
+              <blockquote>
+                <p>호텔에는 피트니스 센터, 실내 수영장 및 루프탑 스카이풀, 키즈존, 게임룸 등의 부대 시설이 잘 마련되어 있습니다. 세탁기, 건조기, 자판기 등이 갖춰진 멀티룸도 있습니다.</p>
+              </blockquote>
+              <h3>객실</h3>
+              <blockquote>
+                <p>모든 424개 객실에는 고급 침구, 에어컨 외에도 특별한 숙박 경험을 위해 무료 WiFi, 금고도 마련되어 있습니다.이 밖에 다음과 같은 편의 시설 및 서비스를 모든 객실에서
+                  이용하실
+                  수 있습니다.</p>
+              </blockquote>
+            </div>
+          </article>
+        </section>
+      </div>
     </div>
   </div>
-</div>
   <footer> <!--footer-->
     <div class="footer-nav">
       <ul>
@@ -139,7 +154,7 @@
         <li><a href="이용약관.html" target="_blank">개인정보 처리방침</a></li>
         <li><a href="">고객센터</a></li>
       </ul>
-      
+
       <ul style="opacity: 0.5;">
         <li>제작자:</li>
         <li>강예솔</li>
